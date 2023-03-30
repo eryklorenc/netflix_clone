@@ -13,11 +13,13 @@ class AuthGate extends StatelessWidget {
       initialData: FirebaseAuth.instance.currentUser,
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
-          return const SignInScreen(
-            providerConfigs: [
-              EmailProviderConfiguration(),
-            ],
-          );
+          return SignInScreen(
+              providerConfigs: const [
+                EmailProviderConfiguration(),
+              ],
+              headerBuilder: (context, constraints, _) {
+                return Image(image: AssetImage('assets/logo1.png'));
+              });
         }
         return HomePage(
           currentUser: snapshot.data!,

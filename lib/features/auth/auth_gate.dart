@@ -18,7 +18,7 @@ class AuthGate extends StatelessWidget {
                 EmailProviderConfiguration(),
               ],
               headerBuilder: (context, constraints, _) {
-                return Image(image: AssetImage('assets/logo1.png'));
+                return const Image(image: AssetImage('assets/logo1.png'));
               });
         }
         return HomePage(

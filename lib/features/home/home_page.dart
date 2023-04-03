@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/features/home/views/continue_watching.dart';
 import 'package:netflix_clone/features/home/views/options.dart';
 import 'package:netflix_clone/features/home/views/top_category_list.dart';
 
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.black,
       body: CustomScrollView(
         slivers: [
-           TopCategoryListWidget(),
+          TopCategoryListWidget(),
           SliverToBoxAdapter(
             child: SizedBox(
               height: 250,
@@ -29,14 +30,9 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           OptionsWidget(),
-          
-
+          ContinueWatchingWidget(),
         ],
       ),
     );
   }
 }
-
-
-
-

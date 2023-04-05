@@ -8,6 +8,7 @@ class TopCategoryListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      
       backgroundColor: Colors.black,
       leading: const Image(
         image: AssetImage('assets/logo.jpg'),

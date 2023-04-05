@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ContinueWatchingWidget extends StatelessWidget {
-  const ContinueWatchingWidget({
+class PopularWidget extends StatelessWidget {
+  const PopularWidget({
     super.key,
   });
 
@@ -9,14 +9,14 @@ class ContinueWatchingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: SizedBox(
-        height: 160,
+        height: 180,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
               padding: EdgeInsets.only(top: 20, right: 100),
               child: Text(
-                'Continue Watching for Tom',
+                'Popular on Netflix',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -31,11 +31,11 @@ class ContinueWatchingWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  width: 180,
+                  width: 120,
                   height: 100,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/film1.jpg'),
+                        image: AssetImage('assets/film3.jpg'),
                         fit: BoxFit.fill),
                   ),
                   child: const Center(
@@ -49,11 +49,29 @@ class ContinueWatchingWidget extends StatelessWidget {
                   width: 10,
                 ),
                 Container(
-                  width: 180,
+                  width: 120,
                   height: 100,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/film2.jpg'),
+                        image: AssetImage('assets/film4.jpg'),
+                        fit: BoxFit.fill),
+                  ),
+                  child: const Center(
+                    child: Icon(
+                      Icons.play_arrow_sharp,
+                      size: 40,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  width: 120,
+                  height: 100,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/film5.jpg'),
                         fit: BoxFit.fill),
                   ),
                   child: const Center(
